@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  </head>
+  <div id="container">
+    <canvas id="canvas" width="640" height="640" class="canvas"></canvas>
+    <script>
+
+        //classes
+       
+       let nonClassObjectExample = {}
+       nonClassObjectExample.size = 10
+       nonClassObjectExample.height = 12
+       nonClassObjectExample.name = "Jam"
+
+      console.log(nonClassObjectExample)
+
+      // class example
+
+      class ExampleClassBlueprint {
+          constructor(size, height, name){
+            this.size = size
+            this.height = height
+            this.name = name
+          }
+          //this is a 'class function' it does not need the keyword 'function' because it is inside the class scope.
+          log(){
+            console.log(this)
+          }
+      }
+
+      let classObjectExample = new ExampleClassBlueprint(8, 28, "Jelly")
+      classObjectExample.log()
+
+
+        // solution
+    
+    
+    </script>
+</html>

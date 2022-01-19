@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  </head>
+  <div id="container">
+    <canvas id="canvas" width="640" height="640" class="canvas"></canvas>
+    <script>
+
+    
+        // draw a Circle
+        let canvas  = document.getElementById("canvas")
+        let canvas_context = canvas.getContext('2d');
+
+
+        class CircleExample {
+            constructor(x,y, radius, color){
+                this.x = x
+                this.y = y
+                this.radius = radius
+                this.color = color
+            }
+            draw(){
+                canvas_context.fillStyle = this.color
+                canvas_context.arc(this.x, this.y, this.radius, 0, Math.PI*2, true)
+                canvas_context.fill()
+            }
+        }
+
+        let circleExample = new CircleExample(320, 320, 50, "red")
+
+        circleExample.draw()    
+
+        console.log(circleExample)
+
+
+    </script>
+</html>
