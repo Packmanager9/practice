@@ -7,17 +7,26 @@
     <canvas id="canvas" width="640" height="640" class="canvas"></canvas>
     <script>
 
-        //loops arrays 
+        //in this lesson we will look at loops and arrays 
+        // loops are a kind of task you can ask the computer to perform
+        // loops are performed using specific keywords such as 'for' and 'while' and are used to repeat a task a certain number of times
+        // loops often go hand in hand with arrays!
+        // Arrays are just a list of things, in the order you put them there.
         let arrayExample = [] // this '[]' is how you declare an empty array in javascript
-        for(let index = 0; index < 10; index += 1){
+        
+        
+        for(let index = 0; index < 10; index += 1){ // here we ask the computer to count to 10, and make an array of all the numbers it passes on the way there
           arrayExample.push(index)
         }
-        for(let index = 0; index < arrayExample.length; index += 1){
+      
+        for(let index = 0; index < arrayExample.length; index += 1){ // here we ask how long the list is (10) and we ask the computer to perform the task that many times
           console.log(arrayExample[index])
         }
+      
         for(let index = 0; index < arrayExample.length; index += 1){
-          console.log(arrayExample[index]*2)
+          console.log(arrayExample[index]*2) // in this 
         }
+      
         for(let index = 0; index < arrayExample.length; index += 1){
           arrayExample[index] = arrayExample[index] * 3
         }
