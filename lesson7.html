@@ -22,15 +22,24 @@
             }
             draw(){
                 canvas_context.fillStyle = this.color
+                canvas_context.beginPath()
                 canvas_context.arc(this.x, this.y, this.radius, 0, Math.PI*2, true)
                 canvas_context.fill()
+            }
+            move(speed){
+                this.x+=speed
             }
         }
 
         let circleExample = new CircleExample(320, 320, 50, "red")
+        
 
         circleExample.draw()    
-
+          canvas_context.fillStyle = "white"
+          canvas_context.fillRect(0,0,700,700)
+          circleExample.move(1)
+          circleExample.draw()   
+        }, 17);
         console.log(circleExample)
 
 
